@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Observer.cpp
+  Subject.cpp
+  SubscriptionSubject.cpp
+  WeiXinUser.cpp
+  正在生成代码...
+  Project1.vcxproj -> D:\project\code\cpp\design-mode\行为型模式\观察者模式\Project1\x64\Debug\Project1.exe
