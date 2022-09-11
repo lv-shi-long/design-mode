@@ -1,1 +1,1 @@
-这里的所有代码都是用 VSusal Studio 2022 写的。如果用低版本的出现问题。请用最新的 visualstudio 打开。
+所有的代码 没有Makefile  但是都在同一个目录。可以用 g++ *.cpp -o a.out
