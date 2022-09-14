@@ -7,5 +7,5 @@ void HouseOwner::Contacat(string n)
 
 void HouseOwner::GetMessage(string s)
 {
-	cout << name << "ÊÕµ½ÏûÏ¢£º" << s << endl;
+	cout << name << "æ”¶åˆ°æ¶ˆæ¯ï¼š" << s << endl;
 }

@@ -27,7 +27,7 @@ public:
 		}
 		else
 		{
-			cout << "Á÷³Ì½áÊø" << endl;
+			cout << "æµç¨‹ç»“æŸ" << endl;
 		}
 	}
 
