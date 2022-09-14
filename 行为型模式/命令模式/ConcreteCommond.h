@@ -13,7 +13,7 @@ public:
     ConcreteCommond(Order* o, Receiver* r) :ord(o), rec(r) {}
     void Execute()
     {
-        cout << ord->diningTable << "ºÅ²Í×À: " << endl;
+        cout << ord->diningTable << " ç‚¹é¤ " << endl;
         for (auto it = ord->order.begin(); it != ord->order.end(); it++)
         {
             rec->CookFood(it->first, it->second);
