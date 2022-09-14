@@ -1,0 +1,16 @@
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/project/code/cpp/design-mode/建造型设计模式/单例设计模式/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/software/devtool/mingw/mingw64/bin/mingw32-make.exe cmTC_514b0/fast && D:/software/devtool/mingw/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_514b0.dir\build.make CMakeFiles/cmTC_514b0.dir/build
+mingw32-make.exe[1]: Entering directory 'D:/project/code/cpp/design-mode/���������ģʽ/�������ģʽ/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_514b0.dir/testCCompiler.c.obj
+D:\software\devtool\mingw\mingw64\bin\gcc.exe    -o CMakeFiles\cmTC_514b0.dir\testCCompiler.c.obj   -c D:\project\code\cpp\design-mode\建造型设计模式\单例设计模式\CMakeFiles\CMakeTmp\testCCompiler.c
+gcc.exe: error: D:\project\code\cpp\design-mode\建造型设计模式\单例设计模式\CMakeFiles\CMakeTmp\testCCompiler.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_514b0.dir\build.make:82: CMakeFiles/cmTC_514b0.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'D:/project/code/cpp/design-mode/���������ģʽ/�������ģʽ/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:137: cmTC_514b0/fast] Error 2
+
+
+

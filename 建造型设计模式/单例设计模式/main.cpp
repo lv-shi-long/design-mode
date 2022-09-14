@@ -1,11 +1,11 @@
 #include "common.h"
 #include <mutex>
 /*
-	�������ģʽ����  һ����ֻ��ʵ��һ�� ����
+	单例设计模式就是  一个类只能实例一个 对象。
 
-	�ַ�Ϊ ����ʽ �� ����ʽ��
-		����ʽ��  ����˼�壺 �Ƚ������õ���ʱ��Ŵ�����
-		����ʽ��  ����˼�壺 ���õ�֮ǰ�ʹ������ˡ��������Ҳ�ᴴ����
+	又分为 懒汉式 和 饿汉式。
+		懒汉式：  顾名思义： 比较懒，用到的时候才创建。
+		饿汉式：  顾名思义： 在用到之前就创建好了。如果不用也会创建。
 */
 
 class MyClass
@@ -115,23 +115,23 @@ int main()
 	MyClass *sln1 = SingletonLazyNotSafe<MyClass>::GetInstance();
 	MyClass *sln2 = SingletonLazyNotSafe<MyClass>::GetInstance();
 	
-	string ifsame = sln1 == sln2 ? "��ͬһ������" : "����ͬһ������";
+	string ifsame = sln1 == sln2 ? "是同一个变量" : "不是同一个变量";
 	cout << ifsame << endl;
 	
 	SingletonLazySafe1* s11 = SingletonLazySafe1::GetInstance();
 	SingletonLazySafe1* s12 = SingletonLazySafe1::GetInstance();
-	ifsame = s11 == s12 ? "��ͬһ������" : "����ͬһ������";
+	ifsame = s11 == s12 ? "是同一个变量" : "不是同一个变量";
 	cout << ifsame << endl;
 
 
 	SingletonLazySafe2* s21 = SingletonLazySafe2::GetInstance();
 	SingletonLazySafe2* s22 = SingletonLazySafe2::GetInstance();
-	ifsame = s21 == s22 ? "��ͬһ������" : "����ͬһ������";
+	ifsame = s21 == s22 ? "是同一个变量" : "不是同一个变量";
 	cout << ifsame << endl;
 
 	SingletonHungry* h1 = SingletonHungry::GetInstance();
 	SingletonHungry* h2 = SingletonHungry::GetInstance();
-	ifsame = h1 == h2 ? "��ͬһ������" : "����ͬһ������";
+	ifsame = h1 == h2 ? "是同一个变量" : "不是同一个变量";
 	cout << ifsame << endl;
 
 	

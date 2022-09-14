@@ -1,0 +1,51 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CMake",
+             // type 告诉vscode编译器的类型，我用的MinGW64也就是g++，这里是cppdgb
+             // 这个是规定的，不是随便写，比如msvc编译器就是cppvsdbg
+            "type": "cppdbg", 
+            "request": "launch",
+            // program 这个是你的可执行程序位置，这里可以根据自己的tasks.json生成
+            // 程序的位置自定义修改，等会参照后面的tasks.json内容
+            "program": "${workspaceFolder}\\build\\out.exe",
+            // ${xxxx}是vscode内置的变量，可以方便获取到需要的路径或者文件名,
+            // 具体什么变量参考别人的博客，
+            // 这里列举一部分
+            // ${workspaceFolder} :表示当前workspace文件夹路径，也即/home/Coding/Test
+			// ${workspaceRootFolderName}:表示workspace的文件夹名，也即Test
+			// ${file}:文件自身的绝对路径，也即/home/Coding/Test/.vscode/tasks.json
+			// ${relativeFile}:文件在workspace中的路径，也即.vscode/tasks.json
+			// ${fileBasenameNoExtension}:当前文件的文件名，不带后缀，也即tasks
+			// ${fileBasename}:当前文件的文件名，tasks.json
+			// ${fileDirname}:文件所在的文件夹路径，也即/home/Coding/Test/.vscode
+			// ${fileExtname}:当前文件的后缀，也即.json
+			// ${lineNumber}:当前文件光标所在的行号
+			// ${env:PATH}:系统中的环境变量
+            "args": [], 
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            // 调试器的路径
+            "miDebuggerPath": "D:\\software\\devtool\\mingw\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // preLaunchTask 表示在 执行调试前 要完成的任务
+            // 比如这里 要完成 makeRun 这个tasks任务（重新生成程序）
+            // 这里的 makeRun 是 tasks.json 中 lable 标记的任务名称
+            "preLaunchTask": "CmakeAndRun",
+        }
+    ]
+}
+// 上面没有注释的部分基本都是默认生成的，可以不用更改的部分
