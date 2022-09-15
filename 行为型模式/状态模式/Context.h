@@ -22,13 +22,13 @@ public:
 	CloseState* cs;
 	LiftState* curs;
 	Context();
-	//µçÌİ¿ªÃÅ¶¯×÷
+	//ç”µæ¢¯å¼€é—¨åŠ¨ä½œ
 	void open();
-	//µçÌİ¹Ø±Õ¶¯×÷
+	//ç”µæ¢¯å…³é—­åŠ¨ä½œ
 	void close();
-	//µçÌİÔËĞĞ¶¯×÷
+	//ç”µæ¢¯è¿è¡ŒåŠ¨ä½œ
 	void run();
-	//µçÌİÍ£Ö¹¶¯×÷
+	//ç”µæ¢¯åœæ­¢åŠ¨ä½œ
 	void stop();
 
 	void SetCurrentState(LiftState* cur);
